@@ -1,0 +1,23 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    border: 1px solid blue;
+} */
+
+/*
+main{
+    background-color: green;
+} */
+
+#pie, #encabezado{
+    background-color: aqua;
+}
+h1,p,article{
+    color: yellow;
+}
+*{
+    color: gray;
+}
+#header {
+    color: blue;
+}

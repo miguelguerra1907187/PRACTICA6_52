@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase6</title>
+    
+</head>
+<!-- Datos tabulares -->
+
+<body>
+    <header></header>
+    <main>
+        <h2>Formulario</h2>
+        <form action="archivo que controla o procesa el formulario">
+            <fieldset>
+                <legend>Datos generales</legend>
+                <div>
+                    <label for="b">nombre</label>
+                    <input type="text" name="b" id="b" />
+                </div>
+
+                <div>
+                    <label for="c">edad</label>
+                    <input type="number" name="c" id="c" />
+                </div>
+                <div>
+                    <label for="cf">edad</label>
+                    <input type="color" name="cf" id="cf" />
+                </div>
+                <div>
+                    <label for="password">contraseña</label>
+                    <input type="color" name="cv" id="cv" />
+                </div>
+                <div>
+                    <label for="info">comentarios</label>
+                    <textarea name="info" id="info" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <label for="metodo_pago_fav">metodo de pago</label>
+                    <select name="metodo_pago_fav" id="metodo_pago_fav" multiple>
+                        <option value="12">efectivo</option>
+                        <option value="5">credito</option>
+                        <option value="4">debito</option>
+                        <option value="1">bitcoin</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Vehiculos" >Vehiculos</label>
+                    <select name="Vehiculos" id="Vehiculos">
+                        <optgroup label="camionetas">
+                            <option value="3">Toyota</option>
+                            <option value="6">Siverado</option>
+                        </optgroup>
+                        <optgroup label="autos_compactos">
+                            <option value="2">Versa</option>
+                            <option value="7">Sentra</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div>
+                    <label for="edo_civil">¿casado?</label>
+                    <input type="checkbox" name="edo_civil" id="edo_civil">
+                </div>
+                <div>
+                    <label for="foto">Archivo foto empleado:</label>
+                    <input type="file" name="foto" id="foto">
+                </div>
+                <input type="submit" value="Enviar">
+                <div>
+                    <label for="metodo_pago_fav">metodo de pago</label>
+                    <select name="metodo_pago_fav" id="metodo_pago_fav">
+                        <option value="12">efectivo</option>
+                        <option value="5">credito</option>
+                        <option value="4">debito</option>
+                        <option value="1">bitcoin</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="a">nombre
+                        <!-- La entrada esta asociada a la etiqueta -->
+                        <input type="text" name="a" id="a" />
+                    </label>
+                </div>
+            </fieldset>
+        </form>
+
+        <h2>Tablas html</h2>
+        <table border="1px">
+            <tr>
+                <td>Actividad</td>
+                <td>Lunes</td>
+                <td>Martes</td>
+                <td>Miercoles</td>
+                <td>Jueves</td>
+                <td>Viernes</td>
+                <td>Sabado</td>
+                <td>Domingo</td>
+            </tr>
+            <tr>
+                <td>Ir al gimnasio</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+        </table>
+        <br />
+        <table border="1px">
+            <tr>
+                <th>Actividad</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                <th>Sabado</th>
+                <th>Domingo</th>
+            </tr>
+            <tr>
+                <td>Ir al gimnasio</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+        </table>
+        <br />
+        <table border="1px">
+            <tr>
+                <th>Actividad</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                <th>Sabado</th>
+                <th>Domingo</th>
+            </tr>
+            <tr>
+                <td>Ir al gimnasio</td>
+                <td colspan="5">x</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Salir con mi novia</td>
+                <td colspan="5">-</td>
+                <td colspan="2">x</td>
+            </tr>
+            <tr>
+                <td>Practicar futbol</td>
+                <td rowspan="2">x</td>
+                <td colspan="6">-</td>
+            </tr>
+            <tr>
+                <td>Practirar basket</td>
+                <td colspan="7">-</td>
+            </tr>
+        </table>
+        <br />
+        <table border="1px">
+            <thead>
+                <tr>
+                    <th colspan="8">Mi itinerario</th>
+                </tr>
+                <tr>
+                    <th>Actividad</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miercoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                    <th>Sabado</th>
+                    <th>Domingo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ir al gimnasio</td>
+                    <td colspan="5">x</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Salir con mi novia</td>
+                    <td colspan="5">-</td>
+                    <td colspan="2">x</td>
+                </tr>
+                <tr>
+                    <td>Practicar futbol</td>
+                    <td rowspan="2">x</td>
+                    <td colspan="6">-</td>
+                </tr>
+                <tr>
+                    <td>Practirar basket</td>
+                    <td colspan="7">-</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="8">Elaborado por JVPC</td>
+                </tr>
+            </tfoot>
+        </table>
+        <br />
+        <table border="1px">
+            <tr>
+                <th>Actividad</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                <th>Sabado</th>
+                <th>Domingo</th>
+            </tr>
+            <tr>
+                <td>Ir al gimnasio</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+        </table>
+        <br />
+        <table border="1px">
+            <!--sirve para seleccionar la columna de una tabla-->
+            <colgroup>
+                <!--los col son posicionales cada col de arriba a abajo equivale a cada columna de izq a derecha-->
+                <col />
+                <!--El atributo span sirve para que una columna agrupe mas de una columna -->
+                <!--esto solo se ve coloreando los col con css-->
+                <col span="2" />
+                <col />
+            </colgroup>
+            <thead>
+                <caption>
+                    Horario clases
+                </caption>
+                <tr>
+                    <th></th>
+                    <th>L</th>
+                    <th>M</th>
+                    <th>X</th>
+                    <th>J</th>
+                    <th>V</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8:30-9:30</td>
+                    <td>mate</td>
+                    <td>mate</td>
+                    <td>mate</td>
+                    <td>mate</td>
+                    <td>mate</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total de asignaturas</td>
+                    <td>5</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <aside></aside>
+    <footer></footer>
+</body>
+
+</html>
